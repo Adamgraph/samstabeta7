@@ -1,0 +1,322 @@
+
+
+
+
+
+body {
+font-family: 'Ubuntu Mono';
+color: white;
+x background:black;
+background-image: url('./img/looppic5.png');
+text-align:center;
+margin-top: 34px;
+
+-moz-transition: transform 1s; 
+-webkit-transition: transform 1s;  
+-ms-transition: transform 1s;  
+-o-transition: transform 1s;  
+transition: transform 1s;  
+
+  animation: pulse 1.8s ease  ; /*infinite   alternate*/
+
+}
+@keyframes pulse {
+  0% {
+    background-color: red;
+    opacity: 0.3;
+      }
+  40% {
+    background-color: #ad7f7f;
+   
+  }
+}
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: #fa8d8f;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color:  #38d9ae;
+  transition: all 0.3s linear;
+  transition-delay: 0.1s;
+}
+
+
+canvas {
+    font-family: 'Ubuntu Mono';
+    border:1px solid #d3d3d3;
+    background-color: black;
+    background-image: url('./img/galaxloop_2x.gif');
+  x  background-repeat: no-repeat;
+  x  background-attachment: fixed;
+  x   background-size: cover;
+
+    position: center; 
+    align-items: center;
+x    justify-content: center;
+     x width: 50%;
+    display: inline;
+}
+
+#title1 {
+    font-size: 37px;
+    font-family: 'Ubuntu Mono';
+    padding: 21px;
+  
+ 
+}
+
+header {
+    font-family: 'Ubuntu Mono';
+    padding: 11px;
+    margin: 33px;
+}
+@media (max-width: 600px) {
+    header {
+       justify-content: space-around;
+    }
+}
+
+
+main {
+    padding: 11px;
+    margin: 33px;
+}
+
+
+
+p {
+    padding: 11px;
+    margin: 23px;
+
+    color: #fa8d8f;
+   
+    background-color: black;
+
+
+    position: center; 
+    align-items: center;
+
+
+  border-radius: 45px 45px 45px 45px;
+
+  border: solid  2px #38d9ae ;
+
+}
+
+
+.buttonstart {
+
+    font-size: 27px;
+    font-family: 'Ubuntu Mono';
+    
+    padding: 21px;
+    margin: 33px;
+ 
+   
+    background-color: black;
+
+
+    position: center; 
+    align-items: center;
+
+
+  border-radius: 45px 45px 45px 45px;
+
+  border: solid  5px #38d9ae ;
+
+}
+
+#startbutton {
+    padding: 21px;
+    margin: 33px;
+   color: red;
+    background-color: black;
+    position: center; 
+    align-items: center;
+  border-radius: 45px 45px 45px 45px;
+  border: solid  2px #38d9ae ;
+}
+
+#startbutton, a:not(.backArrow){
+    padding: 21px;
+    margin: 33px;
+    color: red;
+    background-color: black;
+    position: center; 
+    align-items: center;
+  border-radius: 45px 45px 45px 45px;
+  border: solid  1px red ;
+
+
+}
+
+
+
+
+
+
+
+.howtoplay img{
+    margin: 45px;
+  
+
+   height: 182px;
+
+
+  x  position: center; 
+ x   align-items: center;
+
+ x   display: inline;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ubuntumono/v10/KFOjCneDtsqEr0keqCMhbCc6CsQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.sm2_button{
+    margin: 45px;
+    padding-left: 14px;
+
+   height: 182px;
+
+
+  x  position: center; 
+ x   align-items: center;
+
+   display: hidden;
+}
+
+img.rright { transform: rotate(90deg) }
+
+p{
+xpadding-left:60px;
+text-align: center;
+}
+
+#foo{
+x border-radius:50px;
+width:94px;
+height:94px;
+
+background:yellow;
+
+
+background-image: url('./img/ship.png');
+
+xposition:center;
+top:0;
+left:0;
+-moz-transition: transform 1s; 
+-webkit-transition: transform 1s;  
+-ms-transition: transform 1s;  
+-o-transition: transform 1s;  
+transition: transform 1s;  
+
+
+  animation: pulse 0.1s ease infinite alternate;
+
+}
+@keyframes pulse {
+  0% {
+    background-color: red;
+    opacity: 0.6;
+    
+  }
+  20% {
+    background-color: #8b8b8b
+   
+  }
+  40% {
+    background-color: #ad7f7f;
+   
+  }
+}
+
+
+
+#circle{
+  width: 100px;
+  height: 100px;
+   background-image: url('./img/ship.png');
+  bottom: 150px;
+  left: 50%;
+  position: absolute;
+  transition-property: bottom;
+  transition-duration: 1s;
+   z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(92, 78, 78, 0.9); 
+  background-image: url('./img/header/cookingicon.png');
+  animation: pulse 15s ease infinite alternate;
+}
+
+
+/*
+
+@keyframes pulse {
+  0% {
+    background-color: #ad7f7f;
+    opacity: 0.9;
+    
+  }
+  20% {
+    background-color: #8b8b8b
+   
+  }
+  40% {
+    background-color: #ad7f7f;
+   
+  }
+}
