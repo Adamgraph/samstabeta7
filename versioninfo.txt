@@ -1,0 +1,7 @@
+(Version 1.0) upload 15.03.2021
+- Everything is working on Browsers
+- First upload of the files
+What to do:
+- Testing and rebuilding 
+- Possible use of more Code
+- Nicer Picture and workflow
