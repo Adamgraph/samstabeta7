@@ -30,6 +30,7 @@ function startGame() {
     myGameArea.start();
 }
 
+// canvas is the gamemonitor with 800 length is pretty okay for 13" and HD screen 
 let myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -54,7 +55,7 @@ let myGameArea = {
 }
 
 
-
+// image means the object is a picture file
 function component(width, height, color, x, y, type) {
     this.type = type;
 
@@ -152,7 +153,7 @@ if (myGamePiece.crashWith(yellowGamePiece)) {
         } 
     }
     myGameArea.clear();
-    myGameArea.frameNo += 21; // was 1  121was perfect
+    myGameArea.frameNo += 21; // was 1  121was perfect 21 is nice
     if (myGameArea.frameNo == 1 || everyinterval(650)) {           // 350 to hard 50 is to much 450 is nice 650perfect
 
 
@@ -236,6 +237,4 @@ function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
 }
-
-
 
