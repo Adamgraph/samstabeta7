@@ -1,4 +1,4 @@
-(Version 1.0) upload 15.03.2021
+(Version 0.1-alpha) upload 15.03.2021
 - Everything is working on Browsers
 - First upload of the files
 What to do:
