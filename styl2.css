@@ -3,7 +3,10 @@ font-family: 'Ubuntu Mono';
 color: white;
 background-image: url('./img/looppic5.png');
 text-align:center;
-margin-top: 34px;
+margin-top: 14px;
+
+overflow-y: hidden; /* Hide vertical scroll bar */
+overflow-x: hidden; /* Hide horizontal scroll bar */
 
 -moz-transition: transform 1s; 
 -webkit-transition: transform 1s;  
@@ -43,9 +46,12 @@ a:hover {
 
 canvas {
     font-family: 'Ubuntu Mono';
-    border:1px solid #d3d3d3;
+    border: 3px groove #1e8bd3;
     background-color: black;
-    background-image: url('./img/galaxloop_2x.gif');
+    background-image: url('./img/galaxloop_2x.gif'); /* galaxloop_2x.gif */
+
+ /*   height: 318px;       318 height of the loopgif*/
+ /*   width: 40%;*/
     position: center; 
     align-items: center;
     display: inline;
@@ -57,27 +63,16 @@ canvas {
     padding: 21px;
 }
 
-header {
-    font-family: 'Ubuntu Mono';
-    padding: 11px;
-    margin: 33px;
-}
-@media (max-width: 600px) {
-    header {
-       justify-content: space-around;
-    }
-}
-
 
 main {
     padding: 11px;
-    margin: 33px;
+    margin: 13px;
 }
 
 
 p {
     padding: 11px;
-    margin: 23px;
+    margin: 5px;
     color: #fa8d8f;
     background-color: black;
     position: center; 
@@ -86,22 +81,39 @@ p {
   border: solid  2px #38d9ae ;
 }
 
+@media (max-width: 1100px) {
+      main, p, a {
+   font-size: 0.8rem;
+    }
+}
 
-.buttonstart {
-    font-size: 27px;
-    font-family: 'Ubuntu Mono';
-    padding: 21px;
-    margin: 33px;
-    background-color: black;
-    position: center; 
-    align-items: center;
-  border-radius: 45px 45px 45px 45px;
-  border: solid  5px #38d9ae ;
+@media (max-width: 800px) {
+      main, p, a {
+   font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+     canvas {
+   height: 518px; 
+    }
+}
+@media (max-width: 600px) {
+     canvas {
+   height: 318px; 
+   margin-top: 20px;
+    }
+}
+@media (max-width: 400px) {
+     canvas {
+   height: 218px; 
+   margin-top: 40px;
+    }
 }
 
 #startbutton {
     padding: 21px;
-    margin: 33px;
+    margin: 3px;
   color: red;
     background-color: black;
     position: center; 
@@ -112,7 +124,7 @@ p {
 
 #startbutton, a:not(.backArrow){
     padding: 21px;
-    margin: 33px;
+    margin: 3px;
     color: red;
     background-color: black;
     position: center; 
@@ -120,13 +132,16 @@ p {
     border-radius: 45px 45px 45px 45px;
     border: solid  1px red ;
 }
+a:hover {
+  text-decoration: none;
+  color:  #38d9ae;
+  transition: all 0.9s linear;
+  transition-delay: 0.1s;
+  text-shadow: 2px 2px 5px green;
+}
 
 
 .howtoplay img{
     margin: 45px;
     height: 182px;
 }
-
-
-
-
