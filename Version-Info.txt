@@ -1,0 +1,20 @@
+(Version 1.1) upload 20.03.2021
+- updated the Asteroid pngs
+- updated the Starship png
+- In this Version the cheat is gone gone...
+- some minor Css changes
+- javascript update with canvas and intervall
+- more Asteroids
+What to do:
+- Use of Gifs instead of pngs
+- Wormhole on the side visible
+- glitch in the galaxy?
+
+(Version 1.0) upload 15.03.2021
+- Everything is working on Browsers-Engine
+- First upload of the files
+What to do:
+- Testing and rebuilding 
+- Possible use of more Code
+- Nicer Picture and workflow
+- In some next Version the cheat will be gone...
